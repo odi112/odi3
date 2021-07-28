@@ -73,28 +73,28 @@ def object_counting_webcam(detection_graph, category_index, is_color_recognition
 
                 if count == 1:
                     json_data = [{"tersedia":5, "kuota":6}]
-                    r = requests.post('http://testparkdl.000webhostapp.com/json/post.php', json=json_data)
+                    r = requests.post('http://testparkiroday.000webhostapp.com/json/post.php', json=json_data)
 
                 if count == 2:
                     json_data = [{"tersedia":4, "kuota":6}]
-                    r = requests.post('http://testparkdl.000webhostapp.com/json/post.php', json=json_data)
+                    r = requests.post('http://testparkiroday.000webhostapp.com/json/post.php', json=json_data)
                 
                 if count == 3:
                     json_data = [{"tersedia":3, "kuota":6}]
-                    r = requests.post('http://testparkdl.000webhostapp.com/json/post.php', json=json_data)
+                    r = requests.post('http://testparkiroday.000webhostapp.com/json/post.php', json=json_data)
 
                 if count == 4:
                     json_data = [{"tersedia":2, "kuota":6}]
-                    r = requests.post('http://testparkdl.000webhostapp.com/json/post.php', json=json_data)
+                    r = requests.post('http://testparkiroday.000webhostapp.com/json/post.php', json=json_data)
 
                 if count == 5:
                     json_data = [{"tersedia":1, "kuota":6}]
-                    r = requests.post('http://testparkdl.000webhostapp.com/json/post.php', json=json_data)
+                    r = requests.post('http://testparkiroday.000webhostapp.com/json/post.php', json=json_data)
                 
                 if(len(counting_mode) == 0):
                     cv2.putText(input_frame, "...", (10, 35), font, 0.8, (0,255,255),2,cv2.FONT_HERSHEY_SIMPLEX)
                     json_data = [{"tersedia":6, "kuota":6}]
-                    r = requests.post('http://testparkdl.000webhostapp.com/json/post.php', json=json_data)
+                    r = requests.post('http://testparkiroday.000webhostapp.com/json/post.php', json=json_data)
 
                 else:
                     cv2.putText(input_frame, counting_mode, (10, 35), font, 0.8, (0,255,255),2,cv2.FONT_HERSHEY_SIMPLEX)
